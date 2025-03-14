@@ -1,0 +1,111 @@
+.background-contents{
+    position:relative;
+   font-family:tahoma, arial;
+  color:white;
+   background-image:url(https://i.pinimg.com/originals/58/72/3e/58723ec863a24bc570faf62d218f851d.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    width:100vw;
+  z-index:0;
+  }
+  
+  .background-contents::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100%;
+    background-color:rgba(240, 255, 240,0.4);  
+  }
+  
+  
+  label{
+    display:block;
+    margin:0.7em 0;
+    }
+    input,
+    select,textarea {width:100%;
+  
+      margin:6px 0 0 0;
+      border-radius:4px;
+      min-height:2.7em;
+      border:2px solid #f0f7d4;
+    }
+    h1{ 
+      font-family: verdana;
+      font-weight: 1000;
+      position:relative;
+    z-index:4;
+      text-align:center;
+      padding-top:1.7em; 
+      line-height:1;
+    }
+    p{text-align:center;
+    padding-bottom:1em;
+    position:relative;
+    z-index:4;
+    line-height:0.8;
+    font-size:17px;
+    font-style:italic;}
+  
+    .form-contents {
+    border-radius:5px;
+    padding-top:0.5em;
+    padding-bottom:.2em;
+    padding-left:0.3em;
+    padding-right:0.3em;
+    font-size:17px;
+     max-width:650px;
+      min-width:300px;
+      margin:0 auto auto auto; 
+      background-color: #39614ecc;
+      position:relative;
+  z-index:4;
+  }
+  
+  .inline {
+    display:inline;
+    width:unset;
+    margin:0 0.5em 0 0;
+    vertical-align: middle;
+  }
+    
+    fieldset{
+      border: none;
+      border-bottom: 1px solid rgb(240, 247, 212, 0.5);
+      padding-top: 1.2em;
+      padding-bottom: 1em;
+       }
+  
+  input[type="submit"]{
+  display:block; 
+  color:white;
+  width:95%;
+  margin:0 auto 0 auto;
+  font-size:17px;
+  background-color:#171f44;
+  border:0px;
+  }
+  input[type="radio"] {
+    transform: scale(1.5);
+    }
+  
+    input[type="checkbox"]{transform: scale(1.7)}
+   
+  
+  ::placeholder {
+      font-size: 16px;}
+  
+       .custom {
+       margin-bottom:1em;}
+    .custom2{margin-top:0em;}
+  .custom3{margin-top:1em;}
+  
+  .custom1 {
+    margin: -3px;
+  }
+  
+   fieldset[id=bottom] {
+  border-bottom: none;
+  } 

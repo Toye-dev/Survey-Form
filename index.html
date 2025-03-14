@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Library Survey Form</title>
+    <meta charset=utf-8></meta>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/> 
+ <link rel="stylesheet" href="styles.css"> 
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway|Josefin+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Anton&display=swap" rel="stylesheet">
+
+ </head> 
+  <body>
+     <div class="background-contents">
+    <div> 
+   <h1 id="title">BoulevardDrive Library Survey</h1>
+<p id="description">Thank you for taking the time to help us get better</p>
+<div 
+ class="form-contents">
+<form id="survey-form">
+  <fieldset>
+    <label for="Name" id="name-label">Name
+<input type="text" id="name" placeholder="Enter your name" required/>
+</label>
+<label for="email" id="email-label">Email
+  <input id="email" type="email" placeholder="Enter your email address" required/></label>
+  <label for="age" id="number-label">Age (Optional)<input id="number" type="number" pattern="[0-9]" min="13" max="60" placeholder="Age"/>
+  </fieldset>
+  <fieldset id="bottom">
+<label id="dropdown-label" for="dropdown">Which of these is your preferred genre/category? <select id="dropdown"> 
+<option value="">Select a genre/category</option> 
+<option value="1">Historical Fiction</option>
+<option value="2">Memoir/Biography</option>
+<option value="3">Fantasy</option>
+<option value="4">Science Fiction</option>
+<option value="5">Self-help</option>
+<option value="6">Lgbtq</option>
+<option value="7">History</option>
+</select>
+</label></fieldset>
+  <fieldset class="custom">
+    <legend>How would you rate the availability of titles in preferred genre/category?</legend>
+    <label class="closer custom1" for="excellent-rating"><input id="excellent-rating" type="radio"name="genre-rating" value="i" class="inline margins">Excellent</label>
+    <label class="closer custom1" for="good-rating"><input id="good-rating" type="radio" name="genre-rating" value="ii" class="inline margins"checked>Good</label>
+    <label class="closer custom1" for="limited-rating"><input id="limited-rating" type="radio"name="genre-rating" value="iii" class="inline margins">Limited</label>
+    </fieldset>
+    <fieldset >
+      <legend>Which of these developments would you like to see at the library? (Check all that applies)</legend>
+      <label for="Community Rooms (For meetings, workshops, classes, others)"><input type="checkbox" value="a" class="inline"/>Community Rooms (For meetings, workshops, classes, others)</label> 
+      <label for="Genre-specific Forum"><input type="checkbox" value="b" class="inline"/>Genre-specific Forum</label> 
+      <label for="General Book Forum"><input type="checkbox" value="c" class="inline"/>General Book Forum</label>
+      <label for="Author Talks"><input type="checkbox" value="d"class="inline"/>Author Talks</label>
+      <label for="Private Study Rooms"><input type="checkbox" value="e" class="inline"/>Private Study Rooms</label>
+      <label for="Genre Reading Challenge"><input type="checkbox" value="f"class="inline"/>Genre Reading Challenge</label>
+      <label for="Children Spaces"><input type="checkbox" value="g"class="inline"/>Children Spaces</label>
+      <label for="Online Catalog"><input type="checkbox" value="h"class="inline"/>Online Catalog</label>
+    </fieldset>
+    <fieldset class="custom2">
+      <label for="comments">Any comments or suggestions? <textarea id="comments"placeholder="Enter your comments here..." rows="7" columns="30"></textarea></label>
+    </fieldset>
+    <input type="submit" id="submit" value="submit"/>
+</form>
+ </div>
+</div>
+  </body>
+</html>     
